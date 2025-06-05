@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Batik Rakyat | Batiknya orang Indonesia</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a class="active" href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a class="active" href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html" class="active">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+
+    <section class="banner">
+      <div class="banner-content">
+        <video autoplay loop muted class="banner-video">
+          <source src="assets/banner.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="container banner-text">
+          <div class="left">
+            <p>Sejak 1996</p>
+            <h1>Selamat Datang di Batik Rakyat</h1>
+          </div>
+
+          <div class="right">
+            <p>
+              Dibuat oleh penjahit lokal dengan penuh cinta, setiap sentuhan
+              menghadirkan karya yang istimewa.
+            </p>
+            <button class="btn">
+              Lihat Koleksi
+              <i class="ri-arrow-right-long-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="text-content">
+            <div>
+              <h1 class="collection-title">
+                Batik<br />
+                Rakyat
+              </h1>
+              <span class="block">sejak 1996</span>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img
+              src="assets/img/about.jpg"
+              alt="Eclipse Collection Model"
+              class="hero-image"
+            />
+          </div>
+
+          <div class="description-content">
+            <h2 class="section-title">Tentang BatikRakyat</h2>
+            <p class="description">
+              Batik Rakyat adalah sebuah merek UMKM yang didirikan pada tahun
+              1996. Batik Rakyat memiliki visi untuk memberikan pengalaman
+              berkualitas tinggi kepada konsumen, dengan mengutamakan kualitas
+              bahan dan desain yang berkualitas tinggi.
+            </p>
+            <a href="#" class="browse-link"> Lihat Koleksi → </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trending Minggu Ini</h2>
+          <p>Koleksi terbaik yang sedang diminati</p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/img/products/1.png"
+                alt="Batik Mega Mendung"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/1-hover.png"
+                alt="Batik Mega Mendung"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <div class="discount-badge">-30%</div>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Cirebon</span>
+              <h3 class="product-title">Mega Mendung Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 840.000</span>
+                <span class="original-price">Rp 1.200.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/img/products/2.png"
+                alt="Batik Pekalongan"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/2-hover.png"
+                alt="Batik Pekalongan"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Pekalongan</span>
+              <h3 class="product-title">Sekar Jagad Premium</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 950.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/img/products/3.png"
+                alt="Batik Solo"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/3-hover.png"
+                alt="Batik Solo"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <div class="discount-badge">-40%</div>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Solo</span>
+              <h3 class="product-title">Parang Kusumo Eksklusif</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.140.000</span>
+                <span class="original-price">Rp 1.900.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/img/products/4.png"
+                alt="Batik Yogyakarta"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/4-hover.png"
+                alt="Batik Yogyakarta"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Yogyakarta</span>
+              <h3 class="product-title">Kawung Prabu Limited</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 2.250.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-header">
+          <div class="header-left">
+            <span class="subtitle">Kategori</span>
+            <h2>Kategori Batik</h2>
+            <p>
+              Temukan berbagai macam kategori batik dari berbagai daerah di
+              Indonesia
+            </p>
+          </div>
+          <div class="header-right">
+            <a href="#semua-produk" class="link"> Lihat Semua </a>
+          </div>
+        </div>
+
+        <div class="categories-grid">
+          <a href="#pria" class="category-card">
+            <div class="category-image">
+              <img src="assets/img/categories/pria.png" alt="Batik Pria" />
+            </div>
+            <div class="category-content">
+              <h3>Batik Pria</h3>
+              <span>120 Produk</span>
+            </div>
+          </a>
+
+          <a href="#wanita" class="category-card">
+            <div class="category-image">
+              <img src="assets/img/categories/wanita.png" alt="Batik Wanita" />
+            </div>
+            <div class="category-content">
+              <h3>Batik Wanita</h3>
+              <span>156 Produk</span>
+            </div>
+          </a>
+
+          <a href="#couple" class="category-card">
+            <div class="category-image">
+              <img src="assets/img/categories/couple.png" alt="Batik Couple" />
+            </div>
+            <div class="category-content">
+              <h3>Batik Couple</h3>
+              <span>98 Produk</span>
+            </div>
+          </a>
+
+          <a href="#kain" class="category-card">
+            <div class="category-image">
+              <img src="assets/img/categories/kain.png" alt="Kain Batik" />
+            </div>
+            <div class="category-content">
+              <h3>Kain Batik</h3>
+              <span>234 Produk</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals">
+      <div class="container">
+        <div class="new-arrivals-header">
+          <div class="header-left">
+            <span class="subtitle">New Collection</span>
+            <h2>Produk Terbaru</h2>
+            <p>
+              Temukan produk terbaru kami dengan kualitas dan desain terbaik
+            </p>
+          </div>
+          <div class="header-right">
+            <a href="#semua-produk" class="link"> Lihat Semua </a>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/1.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/1-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/5.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/5-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/2.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/2-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/6.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/6-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/3.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/3-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/4.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/4-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/8.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/8-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/7.png"
+                alt="Batik Sekar"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/7-hover.png"
+                alt="Batik Sekar"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <span class="status-badge new">New</span>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Premium</span>
+              <h3 class="product-title">Sekar Jagad Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.250.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-collections">
+      <div class="container">
+        <div class="collection-header">
+          <div class="header-center">
+            <span class="subtitle">Featured Collections</span>
+            <h2>Koleksi Pilihan</h2>
+            <p>Koleksi eksklusif yang dipilih khusus untuk Anda</p>
+          </div>
+        </div>
+
+        <div class="collections-wrapper">
+          <div class="collection-main">
+            <a href="#premium" class="collection-card large">
+              <div class="collection-image">
+                <img
+                  src="assets/img/collections/premium.png"
+                  alt="Koleksi Premium"
+                />
+              </div>
+              <div class="collection-overlay">
+                <div class="collection-info">
+                  <span class="label">Limited Edition</span>
+                  <h3>Premium Collection</h3>
+                  <p>Koleksi batik premium dengan detail yang menakjubkan</p>
+                  <span class="link-more">
+                    Lihat Koleksi <i class="ri-arrow-right-line"></i>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="collection-grid">
+            <a href="#casual" class="collection-card">
+              <div class="collection-image">
+                <img
+                  src="assets/img/collections/casual.png"
+                  alt="Batik Casual"
+                />
+              </div>
+              <div class="collection-overlay">
+                <div class="collection-info">
+                  <span class="label">New Arrival</span>
+                  <h3>Casual Series</h3>
+                  <span class="link-more">
+                    Lihat Koleksi <i class="ri-arrow-right-line"></i>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#exclusive" class="collection-card">
+              <div class="collection-image">
+                <img
+                  src="assets/img/collections/exclusive.png"
+                  alt="Batik Exclusive"
+                />
+              </div>
+              <div class="collection-overlay">
+                <div class="collection-info">
+                  <span class="label">Exclusive</span>
+                  <h3>Exclusive Line</h3>
+                  <span class="link-more">
+                    Lihat Koleksi <i class="ri-arrow-right-line"></i>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#modern" class="collection-card">
+              <div class="collection-image">
+                <img
+                  src="assets/img/collections/modern.png"
+                  alt="Batik Modern"
+                />
+              </div>
+              <div class="collection-overlay">
+                <div class="collection-info">
+                  <span class="label">Trending</span>
+                  <h3>Modern Touch</h3>
+                  <span class="link-more">
+                    Lihat Koleksi <i class="ri-arrow-right-line"></i>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#modern" class="collection-card">
+              <div class="collection-image">
+                <img
+                  src="assets/img/collections/muslim.png"
+                  alt="Batik Modern"
+                />
+              </div>
+              <div class="collection-overlay">
+                <div class="collection-info">
+                  <span class="label">Muslim</span>
+                  <h3>Muslim Collection</h3>
+                  <span class="link-more">
+                    Lihat Koleksi <i class="ri-arrow-right-line"></i>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="header-center">
+          <span class="subtitle">Testimonials</span>
+          <h2>Apa Kata Mereka?</h2>
+          <p>Pengalaman pelanggan kami dalam menggunakan produk Batik Rakyat</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="user-info">
+                <div class="user-image">
+                  <img
+                    src="https://avatar.iran.liara.run/public"
+                    alt="Sarah Wijaya"
+                  />
+                </div>
+                <div class="user-detail">
+                  <h4>Sarah Wijaya</h4>
+                  <span>Fashion Enthusiast</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Saya sangat terkesan dengan kualitas batik dari Batik Rakyat.
+              Motifnya unik dan khas, bahannya nyaman dipakai. Pelayanannya juga
+              sangat memuaskan!"
+            </p>
+            <span class="verified-badge">
+              <i class="ri-checkbox-circle-fill"></i> Pembeli Terverifikasi
+            </span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="user-info">
+                <div class="user-image">
+                  <img
+                    src="https://avatar.iran.liara.run/public/boy"
+                    alt="Budi Santoso"
+                  />
+                </div>
+                <div class="user-detail">
+                  <h4>Budi Santoso</h4>
+                  <span>Pengusaha</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Perfect untuk acara formal! Saya sudah berlangganan di Batik
+              Rakyat sejak 2 tahun lalu dan belum pernah kecewa dengan
+              produknya."
+            </p>
+            <span class="verified-badge">
+              <i class="ri-checkbox-circle-fill"></i> Pembeli Terverifikasi
+            </span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="user-info">
+                <div class="user-image">
+                  <img
+                    src="https://avatar.iran.liara.run/public/girl"
+                    alt="Maya Anggraini"
+                  />
+                </div>
+                <div class="user-detail">
+                  <h4>Maya Anggraini</h4>
+                  <span>Content Creator</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Koleksi batik couple-nya keren banget! Cocok untuk hadiah
+              anniversary. Pengiriman cepat dan packaging-nya aman."
+            </p>
+            <span class="verified-badge">
+              <i class="ri-checkbox-circle-fill"></i> Pembeli Terverifikasi
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="articles">
+      <div class="container">
+        <div class="header-center">
+          <span class="subtitle">Articles</span>
+          <h2>Artikel & Inspirasi</h2>
+          <p>Temukan artikel menarik seputar dunia batik dan fashion</p>
+        </div>
+
+        <div class="articles-wrapper">
+          <div class="main-article">
+            <article class="article-card featured">
+              <div class="article-image">
+                <img
+                  src="assets/img/articles/main.png"
+                  alt="Sejarah Batik Indonesia"
+                />
+                <span class="article-tag">Featured</span>
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="date">20 Mei 2025</span>
+                  <span class="category">Sejarah</span>
+                </div>
+                <h3>Mengenal Sejarah dan Filosofi Batik di Indonesia</h3>
+                <p>
+                  Batik bukan sekadar kain bermotif, tapi menyimpan makna
+                  mendalam dari setiap corak dan warnanya. Mari mengenal lebih
+                  dalam tentang warisan budaya Indonesia yang mendunia ini.
+                </p>
+                <a href="#" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="side-articles">
+            <article class="article-card horizontal">
+              <div class="article-image">
+                <img src="assets/img/articles/2.png" alt="Tips Merawat Batik" />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="date">18 Mei 2025</span>
+                  <span class="category">Perawatan</span>
+                </div>
+                <h3>7 Cara Merawat Batik Agar Tetap Awet</h3>
+                <a href="#" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card horizontal">
+              <div class="article-image">
+                <img
+                  src="assets/img/articles/3.png"
+                  alt="Mix and Match Batik"
+                />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="date">15 Mei 2025</span>
+                  <span class="category">Style Guide</span>
+                </div>
+                <h3>Mix & Match Batik untuk Gaya Modern</h3>
+                <a href="#" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card horizontal">
+              <div class="article-image">
+                <img src="assets/img/articles/4.png" alt="Tren Batik 2025" />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="date">12 Mei 2025</span>
+                  <span class="category">Fashion</span>
+                </div>
+                <h3>Tren Motif Batik yang Akan Populer di 2025</h3>
+                <a href="#" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card horizontal">
+              <div class="article-image">
+                <img src="assets/img/articles/5.png" alt="Batik Wedding" />
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="date">10 Mei 2025</span>
+                  <span class="category">Wedding</span>
+                </div>
+                <h3>Inspirasi Batik untuk Pernikahan Modern</h3>
+                <a href="#" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <span class="subtitle">Newsletter</span>
+            <h2>Dapatkan Update Terbaru</h2>
+            <p>
+              Berlangganan newsletter kami untuk mendapatkan informasi terbaru
+              tentang produk, promo, dan artikel menarik
+            </p>
+
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Masukkan email Anda"
+                  required
+                />
+                <button type="submit" class="btn">
+                  Berlangganan <i class="ri-arrow-right-line"></i>
+                </button>
+              </div>
+              <label class="privacy-label">
+                <input type="checkbox" required />
+                <span
+                  >Saya setuju menerima email marketing dari Batik Rakyat</span
+                >
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="assets/img/logo.png"
+              alt="Batik Rakyat"
+              class="footer-logo"
+            />
+            <p>
+              Menemani perjalanan fashion Anda dengan sentuhan warisan budaya
+              Indonesia sejak 1996.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="koleksi.html">Koleksi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#pria">Batik Pria</a></li>
+              <li><a href="#wanita">Batik Wanita</a></li>
+              <li><a href="#couple">Batik Couple</a></li>
+              <li><a href="#muslim">Batik Muslim</a></li>
+              <li><a href="#kain">Kain Batik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#cara-order">Cara Order</a></li>
+              <li><a href="#pengiriman">Pengiriman</a></li>
+              <li><a href="#pembayaran">Pembayaran</a></li>
+              <li><a href="#pengembalian">Pengembalian</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p>
+                <i class="ri-map-pin-2-line"></i>
+                Jl. Sudirman No. 123, Pekanbaru, Indonesia
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +62 123 4567 890
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                hello@batikrakyat.com
+              </p>
+              <p>
+                <i class="ri-time-line"></i>
+                Senin - Minggu: 08.00 - 20.00 WIB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Batik Rakyat. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#privacy">Privacy Policy</a>
+              <span class="separator">•</span>
+              <a href="#terms">Terms of Service</a>
+              <span class="separator">•</span>
+              <a href="#sitemap">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

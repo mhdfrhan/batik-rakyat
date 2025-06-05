@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Batik Rakyat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar checkout-nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/img/logo.png" alt="Batik Rakyat" class="logo" />
+          </a>
+          <div class="checkout-steps">
+            <div class="step active">
+              <span class="step-number">1</span>
+              <span class="step-text">Pengiriman</span>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <span class="step-text">Pembayaran</span>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <span class="step-text">Konfirmasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="checkout-page">
+      <div class="container">
+        <div>
+          <a href="index.html" class="btn-back">
+            <i class="ri-arrow-left-line"></i>
+            Kembali ke Halaman Utama
+          </a>
+        </div>
+        <div class="checkout-wrapper">
+          <div class="checkout-form">
+            <section class="form-section">
+              <h2>Alamat Pengiriman</h2>
+              <div class="saved-addresses">
+                <div class="address-card active">
+                  <div class="address-header">
+                    <h3>Rumah</h3>
+                    <span class="badge-primary">Utama</span>
+                  </div>
+                  <p class="recipient">Muhammad Farhan</p>
+                  <p class="phone">+62 812-3456-7890</p>
+                  <p class="address">
+                    Jl. Sudirman No. 123, Tangkerang Selatan, Bukit Raya,
+                    Pekanbaru, Riau 28288
+                  </p>
+                  <button class="btn-text">Ubah Alamat</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="form-section">
+              <h2>Metode Pengiriman</h2>
+              <div class="shipping-options">
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="jne" checked />
+                  <div class="option-content">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/9/92/New_Logo_JNE.png"
+                      alt="JNE"
+                    />
+                    <div class="option-details">
+                      <div class="option-header">
+                        <span class="service-name">JNE Regular</span>
+                        <span class="shipping-cost">Rp 25.000</span>
+                      </div>
+                      <span class="estimated-time">Estimasi tiba 4-6 hari</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="jnt" />
+                  <div class="option-content">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/J%26T_Express_logo.svg/2560px-J%26T_Express_logo.svg.png"
+                      alt="J&T Express"
+                    />
+                    <div class="option-details">
+                      <div class="option-header">
+                        <span class="service-name">J&T Express</span>
+                        <span class="shipping-cost">Rp 35.000</span>
+                      </div>
+                      <span class="estimated-time">Estimasi tiba 2-3 hari</span>
+                    </div>
+                  </div>
+                </label>
+                <label class="shipping-option">
+                  <input type="radio" name="shipping" value="jnt" />
+                  <div class="option-content">
+                    <img
+                      src="https://www.nuwori.com/wp-content/uploads/2017/10/logo-sicepat.png"
+                      alt="Sicepat"
+                    />
+                    <div class="option-details">
+                      <div class="option-header">
+                        <span class="service-name">SiCepat</span>
+                        <span class="shipping-cost">Rp 32.000</span>
+                      </div>
+                      <span class="estimated-time">Estimasi tiba 3-4 hari</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </section>
+          </div>
+
+          <div class="order-summary">
+            <div class="summary-header">
+              <h2>Ringkasan Pesanan</h2>
+              <button
+                class="btn-text"
+                onclick="window.location.href='keranjang.html'"
+              >
+                <i class="ri-edit-line"></i> Edit
+              </button>
+            </div>
+
+            <div class="order-items">
+              <div class="order-item">
+                <img
+                  src="assets/img/products/1.png"
+                  alt="Mega Mendung Klasik"
+                />
+                <div class="item-details">
+                  <h3>Mega Mendung Klasik</h3>
+                  <span class="item-meta">1 x Rp 840.000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-details">
+              <div class="price-row">
+                <span>Subtotal</span>
+                <span>Rp 2.520.000</span>
+              </div>
+              <div class="price-row">
+                <span>Diskon</span>
+                <span class="discount">-Rp 1.080.000</span>
+              </div>
+              <div class="price-row">
+                <span>Ongkos Kirim</span>
+                <span>Rp 25.000</span>
+              </div>
+              <div class="price-row total">
+                <span>Total</span>
+                <span class="total-price">Rp 1.465.000</span>
+              </div>
+            </div>
+
+            <a href="pembayaran.html">
+              <button class="btn-checkout">
+                Bayar Sekarang
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

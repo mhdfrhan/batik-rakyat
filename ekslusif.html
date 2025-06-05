@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eksklusif | Batik Rakyat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a class="active" href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a class="active" href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html" class="active">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+
+    <section class="exclusive-hero">
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <span class="subtitle">Limited Edition</span>
+            <h1>Koleksi Eksklusif <br />Batik Rakyat</h1>
+            <p>
+              Temukan koleksi batik eksklusif dengan desain yang sophisticated
+              dan diproduksi secara terbatas untuk pelanggan istimewa kami
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exclusive-benefits">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="ri-vip-crown-2-line"></i>
+            <h3>Limited Edition</h3>
+            <p>Hanya diproduksi dalam jumlah terbatas</p>
+          </div>
+          <div class="benefit-card">
+            <i class="ri-hand-heart-line"></i>
+            <h3>Handmade</h3>
+            <p>Dibuat dengan tangan terampil pengrajin pilihan</p>
+          </div>
+          <div class="benefit-card">
+            <i class="ri-award-line"></i>
+            <h3>Premium Quality</h3>
+            <p>Menggunakan bahan berkualitas terbaik</p>
+          </div>
+          <div class="benefit-card">
+            <i class="ri-shield-check-line"></i>
+            <h3>Sertifikat</h3>
+            <p>Dilengkapi sertifikat keaslian</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exclusive-collections">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <span class="subtitle">Our Collections</span>
+            <h2>Koleksi Eksklusif</h2>
+            <p>
+              Temukan koleksi batik eksklusif dengan desain yang sophisticated
+            </p>
+          </div>
+        </div>
+
+        <div class="collections-grid">
+          <div class="collection-item large">
+            <div class="collection-image">
+              <img
+                src="https://images.unsplash.com/photo-1543874835-ad7d64196a07?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Royal Heritage"
+              />
+              <div class="collection-overlay">
+                <span class="collection-tag">New Arrival</span>
+                <div class="collection-info">
+                  <h3>Royal Heritage</h3>
+                  <p>Terinspirasi dari motif keraton dengan sentuhan modern</p>
+                  <div class="collection-meta">
+                    <span class="price">Mulai Rp 5.500.000</span>
+                    <a href="#" class="btn-outline">Lihat Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exclusive-features">
+      <div class="container">
+        <div class="features-wrapper">
+          <div class="feature-content">
+            <span class="subtitle">Our Process</span>
+            <h2>Craftsmanship Excellence</h2>
+            <p class="feature-description">
+              Setiap langkah pembuatan batik eksklusif kami mengedepankan
+              ketelitian dan dedikasi untuk menghasilkan karya terbaik
+            </p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-header">
+                  <span class="number">01</span>
+                  <div class="feature-icon">
+                    <i class="ri-hand-coin-line"></i>
+                  </div>
+                </div>
+                <div class="feature-text">
+                  <h3>Material Selection</h3>
+                  <p>
+                    Pemilihan bahan premium dari sumber terpercaya dengan
+                    standar kualitas tinggi
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-header">
+                  <span class="number">02</span>
+                  <div class="feature-icon">
+                    <i class="ri-brush-3-line"></i>
+                  </div>
+                </div>
+                <div class="feature-text">
+                  <h3>Handcrafted Process</h3>
+                  <p>
+                    Proses pengerjaan manual oleh pengrajin ahli dengan
+                    pengalaman lebih dari 20 tahun
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-header">
+                  <span class="number">03</span>
+                  <div class="feature-icon">
+                    <i class="ri-focus-3-line"></i>
+                  </div>
+                </div>
+                <div class="feature-text">
+                  <h3>Quality Assurance</h3>
+                  <p>
+                    Pemeriksaan detail di setiap tahap untuk memastikan standar
+                    premium terpenuhi
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-header">
+                  <span class="number">04</span>
+                  <div class="feature-icon">
+                    <i class="ri-bard-line"></i>
+                  </div>
+                </div>
+                <div class="feature-text">
+                  <h3>Perfect Finishing</h3>
+                  <p>
+                    Tahap akhir dengan standar tinggi untuk hasil yang sempurna
+                    dan elegan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-images">
+            <div class="image-grid">
+              <img
+                src="https://images.unsplash.com/photo-1444362408440-274ecb6fc730?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Material Selection"
+                class="feature-img main"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1604973104381-870c92f10343?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Handcrafted Process"
+                class="feature-img"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1680345575909-99633d4b6f46?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Quality Control"
+                class="feature-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation">
+      <div class="container">
+        <div class="consultation-wrapper">
+          <div class="consultation-content">
+            <span class="subtitle">Personal Service</span>
+            <h2>Konsultasi Eksklusif</h2>
+            <p>
+              Dapatkan layanan konsultasi pribadi dengan tim desainer kami untuk
+              menemukan batik yang sesuai dengan kebutuhan Anda
+            </p>
+            <form class="consultation-form">
+              <div class="form-group">
+                <input type="text" placeholder="Nama Lengkap" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Nomor Telepon" required />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Pesan" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn">
+                Kirim Permintaan <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="cta-content">
+            <span class="subtitle">Special Offer</span>
+            <h2>Dapatkan Koleksi Eksklusif Kami</h2>
+            <p>
+              Miliki karya seni batik berkualitas tinggi yang diproduksi
+              terbatas. Setiap pembelian mendapatkan sertifikat keaslian.
+            </p>
+            <div class="cta-buttons">
+              <a href="#koleksi" class="btn btn-primary">
+                Lihat Koleksi
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a href="#konsultasi" class="btn btn-outline">
+                Konsultasi Gratis
+                <i class="ri-customer-service-2-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="assets/img/logo.png"
+              alt="Batik Rakyat"
+              class="footer-logo"
+            />
+            <p>
+              Menemani perjalanan fashion Anda dengan sentuhan warisan budaya
+              Indonesia sejak 1996.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="koleksi.html">Koleksi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#pria">Batik Pria</a></li>
+              <li><a href="#wanita">Batik Wanita</a></li>
+              <li><a href="#couple">Batik Couple</a></li>
+              <li><a href="#muslim">Batik Muslim</a></li>
+              <li><a href="#kain">Kain Batik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#cara-order">Cara Order</a></li>
+              <li><a href="#pengiriman">Pengiriman</a></li>
+              <li><a href="#pembayaran">Pembayaran</a></li>
+              <li><a href="#pengembalian">Pengembalian</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p>
+                <i class="ri-map-pin-2-line"></i>
+                Jl. Sudirman No. 123, Pekanbaru, Indonesia
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +62 123 4567 890
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                hello@batikrakyat.com
+              </p>
+              <p>
+                <i class="ri-time-line"></i>
+                Senin - Minggu: 08.00 - 20.00 WIB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Batik Rakyat. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#privacy">Privacy Policy</a>
+              <span class="separator">•</span>
+              <a href="#terms">Terms of Service</a>
+              <span class="separator">•</span>
+              <a href="#sitemap">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

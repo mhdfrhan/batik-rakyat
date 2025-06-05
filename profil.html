@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Batik Rakyat</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html" class="active">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+
+    <main class="profile-page">
+        <div class="container">
+            <div class="profile-desktop">
+                <aside class="profile-sidebar">
+                    <div class="profile-header">
+                        <div class="profile-image">
+                            <img src="assets/farhan.jpg" alt="Muhammad Farhan">
+                            <button class="edit-photo">
+                                <i class="ri-camera-line"></i>
+                            </button>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Muhammad Farhan</h2>
+                            <span>Member Sejak 2024</span>
+                        </div>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="profil-detail.html" class="profile-nav-item active">
+                            <i class="ri-user-line"></i>
+                            <span>Informasi Profil</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="ri-shopping-bag-line"></i>
+                            <span>Pesanan Saya</span>
+                            <span class="badge">3</span>
+                        </a>
+                        <a href="wishlist.html" class="profile-nav-item">
+                            <i class="ri-heart-line"></i>
+                            <span>Wishlist</span>
+                            <span class="badge">5</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="ri-map-pin-line"></i>
+                            <span>Daftar Alamat</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="ri-bank-card-line"></i>
+                            <span>Metode Pembayaran</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="ri-notification-line"></i>
+                            <span>Notifikasi</span>
+                            <span class="badge badge-danger">2</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="ri-settings-line"></i>
+                            <span>Pengaturan</span>
+                        </a>
+                        <button class="btn-logout">
+                            <i class="ri-logout-box-line"></i>
+                            <span>Keluar</span>
+                        </button>
+                    </nav>
+                </aside>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <div class="section-header">
+                            <h1>Informasi Profil</h1>
+                            <button class="btn-edit">
+                                <i class="ri-edit-line"></i>
+                                Edit Profil
+                            </button>
+                        </div>
+
+                        <div class="profile-details">
+                            <div class="detail-group">
+                                <label>Nama Lengkap</label>
+                                <p>Muhammad Farhan</p>
+                            </div>
+                            <div class="detail-group">
+                                <label>Email</label>
+                                <p>farhan@gmail.com</p>
+                            </div>
+                            <div class="detail-group">
+                                <label>Nomor Telepon</label>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                            <div class="detail-group">
+                                <label>Tanggal Lahir</label>
+                                <p>04 Maret 2005</p>
+                            </div>
+                            <div class="detail-group">
+                                <label>Jenis Kelamin</label>
+                                <p>Laki-laki</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-mobile">
+                <div class="mobile-header">
+                    <div class="profile-image">
+                        <img src="assets/farhan.jpg" alt="Muhammad Farhan">
+                        <button class="edit-photo">
+                            <i class="ri-camera-line"></i>
+                        </button>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Muhammad Farhan</h2>
+                        <span>Member Sejak 2024</span>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-grid">
+                    <a href="profil-detail.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <span>Profil</span>
+                    </a>
+                    <a href="pesanan.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-shopping-bag-line"></i>
+                            <span class="badge">3</span>
+                        </div>
+                        <span>Pesanan</span>
+                    </a>
+                    <a href="wishlist.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-heart-line"></i>
+                            <span class="badge">5</span>
+                        </div>
+                        <span>Wishlist</span>
+                    </a>
+                    <a href="alamat.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span>Alamat</span>
+                    </a>
+                    <a href="pembayaran.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-bank-card-line"></i>
+                        </div>
+                        <span>Pembayaran</span>
+                    </a>
+                    <a href="notifikasi.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-notification-line"></i>
+                            <span class="badge badge-danger">2</span>
+                        </div>
+                        <span>Notifikasi</span>
+                    </a>
+                    <a href="pengaturan.html" class="menu-item">
+                        <div class="menu-icon">
+                            <i class="ri-settings-line"></i>
+                        </div>
+                        <span>Pengaturan</span>
+                    </a>
+                    <button class="menu-item logout">
+                        <div class="menu-icon">
+                            <i class="ri-logout-box-line"></i>
+                        </div>
+                        <span>Keluar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="bottom-bar">
+        <a href="index.html">
+            <i class="ri-home-5-line"></i>
+            <span>Home</span>
+        </a>
+        <a href="koleksi.html">
+            <i class="ri-t-shirt-2-line"></i>
+            <span>Koleksi</span>
+        </a>
+        <a href="promo.html">
+            <i class="ri-price-tag-3-line"></i>
+            <span>Promo</span>
+        </a>
+        <a href="profil.html" class="active">
+            <i class="ri-user-3-line"></i>
+            <span>Profil</span>
+        </a>
+    </div>
+</body>
+</html>

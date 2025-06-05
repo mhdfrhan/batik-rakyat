@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesanan | Batik Rakyat</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar checkout-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="nav-brand">
+                    <img src="assets/img/logo.png" alt="Batik Rakyat" class="logo">
+                </a>
+                <div class="checkout-steps">
+                    <div class="step completed">
+                        <span class="step-number"><i class="ri-check-line"></i></span>
+                        <span class="step-text">Pengiriman</span>
+                    </div>
+                    <div class="step completed">
+                        <span class="step-number"><i class="ri-check-line"></i></span>
+                        <span class="step-text">Pembayaran</span>
+                    </div>
+                    <div class="step active">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Konfirmasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="confirmation-page">
+        <div class="container">
+            <div class="confirmation-wrapper">
+                <div class="confirmation-header">
+                    <div class="success-icon">
+                        <i class="ri-checkbox-circle-line"></i>
+                    </div>
+                    <h1>Pesanan Berhasil Dibuat!</h1>
+                    <p>Terima kasih telah berbelanja di Batik Rakyat</p>
+                    <div class="order-number">
+                        <span>Nomor Pesanan:</span>
+                        <strong>BR25060501</strong>
+                        <button class="btn-copy" onclick="copyToClipboard('BR25060501')">
+                            <i class="ri-file-copy-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="confirmation-content">
+                    <div class="confirmation-details">
+                        <section class="detail-section">
+                            <h2>Status Pembayaran</h2>
+                            <div class="payment-status pending">
+                                <i class="ri-time-line"></i>
+                                <div class="status-info">
+                                    <h3>Menunggu Pembayaran</h3>
+                                    <p>Selesaikan pembayaran sebelum 5 Juni 2025 20:30 WIB</p>
+                                </div>
+                            </div>
+                            <div class="payment-instruction">
+                                <h3>Transfer Bank BCA</h3>
+                                <div class="account-number">
+                                    <span>Nomor Rekening:</span>
+                                    <strong>8720123456</strong>
+                                    <button class="btn-copy" onclick="copyToClipboard('8720123456')">
+                                        <i class="ri-file-copy-line"></i>
+                                    </button>
+                                </div>
+                                <div class="account-name">
+                                    <span>Atas Nama:</span>
+                                    <strong>PT BATIK RAKYAT INDONESIA</strong>
+                                </div>
+                                <div class="total-payment">
+                                    <span>Total Pembayaran:</span>
+                                    <strong>Rp 1.465.000</strong>
+                                    <button class="btn-copy" onclick="copyToClipboard('1465000')">
+                                        <i class="ri-file-copy-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>Informasi Pengiriman</h2>
+                            <div class="shipping-details">
+                                <div class="address-info">
+                                    <h3>Alamat Pengiriman</h3>
+                                    <p class="recipient">Muhammad Farhan</p>
+                                    <p class="phone">+62 812-3456-7890</p>
+                                    <p class="address">Jl. Sudirman No. 123, Tangkerang Selatan, Bukit Raya, Pekanbaru, Riau 28288</p>
+                                </div>
+                                <div class="courier-info">
+                                    <h3>Metode Pengiriman</h3>
+                                    <p class="courier">JNE Regular (2-3 hari)</p>
+                                    <p class="tracking">No. Resi: <span>Akan dikirim setelah paket dikirim</span></p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="detail-section">
+                            <h2>Ringkasan Pesanan</h2>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="assets/img/products/1.png" alt="Mega Mendung Klasik">
+                                    <div class="item-details">
+                                        <h3>Mega Mendung Klasik</h3>
+                                        <span class="item-meta">1 x Rp 840.000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="confirmation-actions">
+                        <a href="#" class="btn btn-primary" onclick="window.print()">
+                            <i class="ri-printer-line"></i>
+                            Cetak Invoice
+                        </a>
+                        <a href="index.html" class="btn btn-outline">
+                            <i class="ri-home-line"></i>
+                            Kembali ke Beranda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

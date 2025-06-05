@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran | Batik Rakyat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar checkout-nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/img/logo.png" alt="Batik Rakyat" class="logo" />
+          </a>
+          <div class="checkout-steps">
+            <div class="step completed">
+              <span class="step-number"><i class="ri-check-line"></i></span>
+              <span class="step-text">Pengiriman</span>
+            </div>
+            <div class="step active">
+              <span class="step-number">2</span>
+              <span class="step-text">Pembayaran</span>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <span class="step-text">Konfirmasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="payment-page">
+      <div class="container">
+        <div>
+          <a href="index.html" class="btn-back">
+            <i class="ri-arrow-left-line"></i>
+            Kembali ke Halaman Utama
+          </a>
+        </div>
+        <div class="payment-wrapper">
+          <div class="payment-methods">
+            <h2>Pilih Metode Pembayaran</h2>
+            <div class="methods-wrapper">
+              <div class="method-group">
+                <h3><i class="ri-wallet-3-line"></i> E-Wallet</h3>
+                <div class="method-options">
+                  <label class="method-option">
+                    <input type="radio" name="payment" value="qris" />
+                    <div class="option-content">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo_QRIS.svg/2560px-Logo_QRIS.svg.png" alt="QRIS" />
+                      <div class="option-info">
+                        <span class="option-name">QRIS</span>
+                        <span class="option-desc"
+                          >Bayar dengan QRIS dari e-wallet apapun</span
+                        >
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="method-option">
+                    <input type="radio" name="payment" value="gopay" />
+                    <div class="option-content">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNkYCbXFJSEYn6Sr4ACJQffqAZ1CGVYzbbBmZCMHbWfT4hpu1WVCK7po71tAxQbqhbyjPMcOpS3fHKPMZFFib78LDuxkeFkZQav64iN1pteAUxN7aFUUWcY5JXvnP3lKWux3DPpigyLcP0aSQaPQAR8a5lsLXx3tzIV88HW0pmeoTzVVaF0_Zznw/w400-h131/Logo%20GoPay%20%20-%20%20(Koleksilogo.com).png" alt="GoPay" />
+                      <div class="option-info">
+                        <span class="option-name">GoPay</span>
+                        <span class="option-desc">Bayar dengan GoPay</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="method-group">
+                <h3><i class="ri-bank-line"></i> Transfer Bank</h3>
+                <div class="method-options">
+                  <label class="method-option">
+                    <input type="radio" name="payment" value="bca" checked />
+                    <div class="option-content">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1280px-Bank_Central_Asia.svg.png" alt="BCA" />
+                      <div class="option-info">
+                        <span class="option-name">Bank BCA</span>
+                        <span class="option-desc"
+                          >Transfer melalui Bank BCA</span
+                        >
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="method-option">
+                    <input type="radio" name="payment" value="mandiri" />
+                    <div class="option-content">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Bank_Mandiri_logo_2016.svg/2560px-Bank_Mandiri_logo_2016.svg.png" alt="Mandiri" />
+                      <div class="option-info">
+                        <span class="option-name">Bank Mandiri</span>
+                        <span class="option-desc"
+                          >Transfer melalui Bank Mandiri</span
+                        >
+                      </div>
+                    </div>
+                  </label>
+
+                  <label class="method-option">
+                    <input type="radio" name="payment" value="bni" />
+                    <div class="option-content">
+                      <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/2560px-BNI_logo.svg.png" alt="BNI" />
+                      <div class="option-info">
+                        <span class="option-name">Bank BNI</span>
+                        <span class="option-desc"
+                          >Transfer melalui Bank BNI</span
+                        >
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-summary">
+            <div class="summary-header">
+              <h2>Ringkasan Pesanan</h2>
+              <button
+                class="btn-text"
+                onclick="window.location.href='keranjang.html'"
+              >
+                <i class="ri-edit-line"></i> Edit
+              </button>
+            </div>
+
+            <div class="summary-products">
+              <div class="summary-product">
+                <img
+                  src="assets/img/products/1.png"
+                  alt="Mega Mendung Klasik"
+                />
+                <div class="product-info">
+                  <h3>Mega Mendung Klasik</h3>
+                  <span class="quantity">1 x Rp 840.000</span>
+                </div>
+              </div>
+              <div class="summary-product">
+                <img
+                  src="assets/img/products/4.png"
+                  alt="Baju Batik Wanita"
+                />
+                <div class="product-info">
+                  <h3>Baju Batik Wanita</h3>
+                  <span class="quantity">1 x Rp 600.000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span>Rp 2.520.000</span>
+              </div>
+              <div class="summary-row">
+                <span>Diskon</span>
+                <span class="discount">-Rp 1.080.000</span>
+              </div>
+              <div class="summary-row">
+                <span>Ongkos Kirim</span>
+                <span>Rp 25.000</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total Pembayaran</span>
+                <span class="total-amount">Rp 1.465.000</span>
+              </div>
+            </div>
+
+            <button
+              class="btn-pay"
+              onclick="window.location.href='konfirmasi.html'"
+            >
+              Bayar Sekarang
+              <i class="ri-arrow-right-line"></i>
+            </button>
+
+            <div class="secure-payment">
+              <i class="ri-shield-check-line"></i>
+              <p>Pembayaran Anda aman dan terenkripsi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

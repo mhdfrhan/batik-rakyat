@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang | Batik Rakyat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+
+    <section class="cart-hero">
+      <div class="container">
+        <div class="cart-header">
+          <h1><i class="ri-shopping-cart-2-line"></i> Keranjang Saya</h1>
+          <p>Produk yang Anda pilih untuk dibeli</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-content">
+      <div class="container">
+        <div class="cart-wrapper">
+          <div class="cart-items">
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="assets/img/products/1.png"
+                  alt="Mega Mendung Klasik"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-info">
+                  <h3>Mega Mendung Klasik</h3>
+                  <span class="category">Batik Cirebon</span>
+                </div>
+                <div class="item-price">
+                  <span class="current-price">Rp 840.000</span>
+                  <span class="original-price">Rp 1.200.000</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">
+                      <i class="ri-subtract-line"></i>
+                    </button>
+                    <input type="number" value="1" min="1" max="99" />
+                    <button class="qty-btn plus">
+                      <i class="ri-add-line"></i>
+                    </button>
+                  </div>
+                  <button class="remove-btn">
+                    <i class="ri-delete-bin-6-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="assets/img/products/3.png"
+                  alt="Parang Kusumo Eksklusif"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-info">
+                  <h3>Parang Kusumo Eksklusif</h3>
+                  <span class="category">Batik Solo</span>
+                </div>
+                <div class="item-price">
+                  <span class="current-price">Rp 1.140.000</span>
+                  <span class="original-price">Rp 1.900.000</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">
+                      <i class="ri-subtract-line"></i>
+                    </button>
+                    <input type="number" value="1" min="1" max="99" />
+                    <button class="qty-btn plus">
+                      <i class="ri-add-line"></i>
+                    </button>
+                  </div>
+                  <button class="remove-btn">
+                    <i class="ri-delete-bin-6-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="assets/img/products/4.png"
+                  alt="Kawung Prabu Limited"
+                />
+              </div>
+              <div class="item-details">
+                <div class="item-info">
+                  <h3>Kawung Prabu Limited</h3>
+                  <span class="category">Batik Yogyakarta</span>
+                </div>
+                <div class="item-price">
+                  <span class="current-price">Rp 2.250.000</span>
+                </div>
+                <div class="item-actions">
+                  <div class="quantity-control">
+                    <button class="qty-btn minus">
+                      <i class="ri-subtract-line"></i>
+                    </button>
+                    <input type="number" value="1" min="1" max="99" />
+                    <button class="qty-btn plus">
+                      <i class="ri-add-line"></i>
+                    </button>
+                  </div>
+                  <button class="remove-btn">
+                    <i class="ri-delete-bin-6-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-summary">
+            <h2>Ringkasan Belanja</h2>
+            <div class="summary-items">
+              <div class="summary-item">
+                <span>Total Harga (3 Produk)</span>
+                <span>Rp 2.520.000</span>
+              </div>
+              <div class="summary-item">
+                <span>Total Diskon</span>
+                <span class="discount">-Rp 1.080.000</span>
+              </div>
+            </div>
+            <div class="summary-total">
+              <span>Total Pembayaran</span>
+              <span class="total-price">Rp 1.440.000</span>
+            </div>
+            <a href="checkout.html">
+              <button class="checkout-btn">
+                Lanjut ke Pembayaran
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="cart-empty" style="display: none">
+          <i class="ri-shopping-cart-2-line"></i>
+          <h3>Keranjang Anda Kosong</h3>
+          <p>Anda belum menambahkan produk ke keranjang</p>
+          <a href="koleksi.html" class="browse-btn">
+            Lihat Koleksi
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Anda Mungkin Juga Suka</h2>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/2.png"
+                alt="Sekar Jagad Premium"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/2-hover.png"
+                alt="Sekar Jagad Premium"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Pekalongan</span>
+              <h3 class="product-title">Sekar Jagad Premium</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 950.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/5.png"
+                alt="Sogan Klasik"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/5-hover.png"
+                alt="Sogan Klasik"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <div class="discount-badge">-25%</div>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Yogyakarta</span>
+              <h3 class="product-title">Sogan Klasik</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 975.000</span>
+                <span class="original-price">Rp 1.300.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/6.png"
+                alt="Truntum Gurdo"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/6-hover.png"
+                alt="Truntum Gurdo"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Solo</span>
+              <h3 class="product-title">Truntum Gurdo</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 1.450.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card fade-in">
+            <div class="product-image">
+              <img
+                src="assets/img/products/7.png"
+                alt="Pring Sedapur"
+                class="image-main"
+              />
+              <img
+                src="assets/img/products/7-hover.png"
+                alt="Pring Sedapur"
+                class="image-hover"
+              />
+              <button class="wishlist-btn">
+                <i class="ri-heart-line"></i>
+              </button>
+              <div class="discount-badge">-20%</div>
+            </div>
+            <div class="product-info">
+              <span class="category">Batik Madura</span>
+              <h3 class="product-title">Pring Sedapur</h3>
+              <div class="product-price">
+                <span class="current-price">Rp 880.000</span>
+                <span class="original-price">Rp 1.100.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="margin-top: 0">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="assets/img/logo.png"
+              alt="Batik Rakyat"
+              class="footer-logo"
+            />
+            <p>
+              Menemani perjalanan fashion Anda dengan sentuhan warisan budaya
+              Indonesia sejak 1996.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="koleksi.html">Koleksi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#pria">Batik Pria</a></li>
+              <li><a href="#wanita">Batik Wanita</a></li>
+              <li><a href="#couple">Batik Couple</a></li>
+              <li><a href="#muslim">Batik Muslim</a></li>
+              <li><a href="#kain">Kain Batik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#cara-order">Cara Order</a></li>
+              <li><a href="#pengiriman">Pengiriman</a></li>
+              <li><a href="#pembayaran">Pembayaran</a></li>
+              <li><a href="#pengembalian">Pengembalian</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p>
+                <i class="ri-map-pin-2-line"></i>
+                Jl. Sudirman No. 123, Pekanbaru, Indonesia
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +62 123 4567 890
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                hello@batikrakyat.com
+              </p>
+              <p>
+                <i class="ri-time-line"></i>
+                Senin - Minggu: 08.00 - 20.00 WIB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Batik Rakyat. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#privacy">Privacy Policy</a>
+              <span class="separator">•</span>
+              <a href="#terms">Terms of Service</a>
+              <span class="separator">•</span>
+              <a href="#sitemap">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
