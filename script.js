@@ -167,26 +167,22 @@ searchLinks.forEach(link => {
 
 searchClose.addEventListener('click', toggleSearchModal);
 
-// Close on escape key
 document.addEventListener('keydown', (e) => {
 	if (e.key === 'Escape' && searchModal.classList.contains('active')) {
 		toggleSearchModal();
 	}
 });
 
-// Close on click outside
 searchModal.addEventListener('click', (e) => {
 	if (e.target === searchModal) {
 		toggleSearchModal();
 	}
 });
 
-// Prevent click propagation on modal content
 document.querySelector('.search-modal-content').addEventListener('click', (e) => {
 	e.stopPropagation();
 });
 
-// Handle search suggestions
 const suggestionTags = document.querySelectorAll('.suggestion-tag');
 suggestionTags.forEach(tag => {
 	tag.addEventListener('click', () => {

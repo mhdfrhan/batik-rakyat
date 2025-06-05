@@ -996,6 +996,10 @@ header p {
   aspect-ratio: 16/9;
 }
 
+.collection-main .collection-card.large .collection-info {
+  text-align: right;
+}
+
 .collection-image {
   width: 100%;
   height: 100%;
@@ -1037,7 +1041,7 @@ header p {
 }
 
 .collection-info h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--white);
   font-weight: 500;
@@ -2223,10 +2227,6 @@ input[type="checkbox"] {
     gap: 2rem;
   }
 
-  .featured-collections .collections-wrapper {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
   .featured-collections .collection-grid {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
@@ -2352,6 +2352,11 @@ input[type="checkbox"] {
   }
   .banner-text .right p {
     font-size: 1.6rem;
+  }
+
+  .featured-collections .collections-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .about .content-wrapper {
@@ -2918,14 +2923,17 @@ input[type="checkbox"] {
   transform: scale(1.05);
 }
 
+.collection-card.large .collection-overlay {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .collection-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   padding: 3rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   color: var(--white);
 }
 
@@ -2968,7 +2976,6 @@ input[type="checkbox"] {
   font-weight: 500;
 }
 
-/* Add to style.css */
 .exclusive-features {
   padding: 12rem 0;
   background-color: var(--white);
@@ -3711,8 +3718,12 @@ input[type="checkbox"] {
 
 .cart-hero {
   padding: 6rem 0;
-  background-color: var(--cream);
-  margin-top: 7.5rem;
+  background-color: var(--primary-brown);
+  padding-top: 7.5rem;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-header {
@@ -3723,7 +3734,7 @@ input[type="checkbox"] {
   font-size: clamp(4rem, 6vw, 6rem);
   margin: 1.5rem 0;
   line-height: 1.2;
-  color: var(--primary-brown);
+  color: var(--cream);
 }
 
 .cart-header p {
@@ -5679,9 +5690,7 @@ input[type="radio"]:checked + .option-content {
 }
 
 .section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   margin-bottom: 3rem;
 }
 
@@ -5795,7 +5804,7 @@ input[type="radio"]:checked + .option-content {
   }
 
   .profile-page {
-    padding: 8rem 0 8rem;
+    padding: 8rem 0 14rem;
   }
 
   .badge {
@@ -5830,7 +5839,8 @@ input[type="radio"]:checked + .option-content {
   padding: 12rem 0 6rem;
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://images.unsplash.com/photo-1586319826907-1ff4aadbaddc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover;
+    url("https://images.unsplash.com/photo-1586319826907-1ff4aadbaddc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+      center/cover;
   color: var(--white);
   text-align: center;
   position: relative;
