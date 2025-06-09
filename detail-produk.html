@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Batik Rakyat | Batiknya orang Indonesia</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a class="active" href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a class="active" href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html" class="active">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+
+    <main class="product-detail-main">
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Kemeja Batik Mega Mendung Premium</h1>
+          <p>Batik Tulis Tangan Eksklusif | Limited Edition</p>
+        </div>
+      </section>
+
+      <section class="breadcrumb">
+        <div class="container">
+          <nav class="breadcrumb-nav">
+            <a href="index.html">Beranda</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="koleksi.html">Koleksi</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="#">Batik Pria</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <span class="current">Kemeja Batik Mega Mendung Premium</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="product-detail-section">
+        <div class="container">
+          <div class="product-container">
+            <div class="product-gallery">
+              <div class="main-image">
+                <img
+                  id="mainImage"
+                  src="assets/img/products/1.png"
+                  alt="Kemeja Batik Mega Mendung Premium"
+                />
+                <div class="discount-badge">40% OFF</div>
+                <button class="zoom-badge">
+                  <i class="ri-zoom-in-line"></i>
+                </button>
+              </div>
+
+              <div class="thumbnail-gallery">
+                <div
+                  class="thumbnail active"
+                  data-image="assets/img/products/1.png"
+                >
+                  <img src="assets/img/products/1.png" alt="View 1" />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="assets/img/products/1-hover.png"
+                >
+                  <img src="assets/img/products/1-hover.png" alt="View 2" />
+                </div>
+                <div class="thumbnail" data-image="assets/img/products/3.png">
+                  <img src="assets/img/products/3.png" alt="View 3" />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="assets/img/products/3-hover.png"
+                >
+                  <img src="assets/img/products/3-hover.png" alt="View 4" />
+                </div>
+              </div>
+            </div>
+
+            <div class="product-detail-info">
+              <h1 class="product-title">Kemeja Batik Mega Mendung Premium</h1>
+              <p class="product-subtitle">
+                Batik Tulis Tangan Eksklusif | Limited Edition
+              </p>
+
+              <div class="rating-section">
+                <div class="stars">
+                  <i class="ri-star-fill star"></i>
+                  <i class="ri-star-fill star"></i>
+                  <i class="ri-star-fill star"></i>
+                  <i class="ri-star-fill star"></i>
+                  <i class="ri-star-half-fill star"></i>
+                </div>
+                <span class="rating-text"
+                  >4.7 (324 ulasan) • 1.2k+ terjual</span
+                >
+              </div>
+
+              <div class="flash-sale">
+                <div class="flash-sale-header">
+                  <i class="ri-flashlight-line" style="font-size: 2rem"></i>
+                  <span class="flash-sale-title"
+                    >Flash Sale Berakhir Dalam:</span
+                  >
+                </div>
+                <div class="timer" id="countdown">
+                  <div class="time-unit">
+                    <span class="time-number" id="hours">05</span>
+                    <span class="time-label">Jam</span>
+                  </div>
+                  <div class="time-unit">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Menit</span>
+                  </div>
+                  <div class="time-unit">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Detik</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-section">
+                <div class="price-container">
+                  <span class="current-price">Rp 420.000</span>
+                  <span class="original-price">Rp 700.000</span>
+                  <span class="discount-percentage">-40%</span>
+                </div>
+                <p
+                  style="
+                    color: var(--green);
+                    font-weight: 600;
+                    text-align: left;
+                  "
+                >
+                  💰 Hemat Rp 280.000!
+                </p>
+              </div>
+
+              <div class="product-options">
+                <div class="option-group">
+                  <label class="option-label">Ukuran:</label>
+                  <div class="size-options">
+                    <button class="size-option">S</button>
+                    <button class="size-option active">M</button>
+                    <button class="size-option">L</button>
+                    <button class="size-option">XL</button>
+                    <button class="size-option">XXL</button>
+                  </div>
+                </div>
+
+                <div class="option-group">
+                  <label class="option-label">Variasi Warna:</label>
+                  <div class="color-options">
+                    <button
+                      class="color-option active"
+                      style="background: #1e40af"
+                      title="Biru Klasik"
+                    ></button>
+                    <button
+                      class="color-option"
+                      style="background: #059669"
+                      title="Hijau Tosca"
+                    ></button>
+                    <button
+                      class="color-option"
+                      style="background: #7c2d12"
+                      title="Coklat Tua"
+                    ></button>
+                    <button
+                      class="color-option"
+                      style="background: #701a75"
+                      title="Ungu Tua"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quantity-section">
+                <label class="quantity-label">Jumlah:</label>
+                <div class="quantity-control">
+                  <button class="quantity-btn" onclick="decreaseQuantity()">
+                    −
+                  </button>
+                  <input
+                    type="number"
+                    class="quantity-input"
+                    value="1"
+                    min="1"
+                    max="10"
+                    id="quantity"
+                  />
+                  <button class="quantity-btn" onclick="increaseQuantity()">
+                    +
+                  </button>
+                </div>
+                <span class="stock-info">📦 Stok: 47 tersisa</span>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn btn-primary">
+                  <i class="ri-shopping-cart-line"></i>
+                  Tambah ke Keranjang
+                </button>
+                <button class="btn btn-secondary">
+                  <i class="ri-secure-payment-line"></i>
+                  Beli Sekarang
+                </button>
+                <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div
+                style="
+                  background: var(--white);
+                  padding: 2rem;
+                  border-radius: 1rem;
+                  margin-top: 2rem;
+                  
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    font-size: 1.4rem;
+                    justify-content: space-between;
+                  "
+                >
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <i
+                      class="ri-truck-line"
+                      style="color: var(--green); font-size: 4rem"
+                    ></i>
+                    <div>
+                      <h2>Gratis Ongkir se-Indonesia</h2>
+                      <p>*Hanya berlaku untuk wilayah Indonesia</p>
+                    </div>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <i
+                      class="ri-shield-check-line"
+                      style="color: var(--red); font-size: 4rem"
+                    ></i>
+                    <div>
+                      <h2>Garansi Kualitas 30 Hari</h2>
+                      <p>*Hanya berlaku untuk produk baru</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="detail-tabs">
+              <button
+                class="tab-btn active"
+                onclick="openTab(event, 'description')"
+              >
+                Deskripsi
+              </button>
+              <button
+                class="tab-btn"
+                onclick="openTab(event, 'specifications')"
+              >
+                Spesifikasi
+              </button>
+              <button class="tab-btn" onclick="openTab(event, 'reviews')">
+                Ulasan (324)
+              </button>
+              <button class="tab-btn" onclick="openTab(event, 'care')">
+                Perawatan
+              </button>
+            </div>
+
+            <div id="description" class="tab-content active">
+              <div class="description">
+                <h3 style="margin-bottom: 1.5rem; font-size: 2rem">
+                  Tentang Produk
+                </h3>
+                <p>
+                  Kemeja Batik Mega Mendung Premium adalah karya seni yang
+                  memadukan tradisi batik Cirebon dengan desain modern yang
+                  elegan. Dibuat dengan teknik batik tulis tangan oleh pengrajin
+                  berpengalaman, setiap helai kain mengandung nilai sejarah dan
+                  kebudayaan Indonesia yang mendalam.
+                </p>
+
+                <p>
+                  Motif Mega Mendung yang iconic dengan gradasi warna yang
+                  memukau melambangkan ketenangan dan kedamaian. Setiap goresan
+                  canting menciptakan pola yang unik dan tidak dapat direplikasi
+                  dengan sempurna, menjadikan setiap kemeja sebagai karya seni
+                  yang eksklusif.
+                </p>
+
+                <h4 style="margin: 2rem 0 1rem 0; font-size: 1.8rem">
+                  Keunggulan Produk:
+                </h4>
+                <ul
+                  style="list-style: disc; margin-left: 2rem; line-height: 1.8"
+                >
+                  <li>
+                    🎨 <strong>Batik Tulis Asli</strong> - Dibuat dengan teknik
+                    tradisional menggunakan canting
+                  </li>
+                  <li>
+                    🧵 <strong>Bahan Premium</strong> - Katun berkualitas tinggi
+                    yang nyaman dan breathable
+                  </li>
+                  <li>
+                    ✨ <strong>Warna Tahan Lama</strong> - Menggunakan pewarna
+                    berkualitas yang tidak mudah luntur
+                  </li>
+                  <li>
+                    👔 <strong>Desain Modern</strong> - Cocok untuk acara formal
+                    maupun kasual
+                  </li>
+                  <li>
+                    🏆 <strong>Limited Edition</strong> - Produksi terbatas
+                    untuk menjaga eksklusivitas
+                  </li>
+                  <li>
+                    🇮🇩 <strong>Produk Lokal</strong> - Mendukung pengrajin batik
+                    Indonesia
+                  </li>
+                </ul>
+
+                <h4 style="margin: 2rem 0 1rem 0; font-size: 1.8rem">
+                  Cocok Untuk:
+                </h4>
+                <div
+                  style="
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1.5rem;
+                    margin: 0 -1rem;
+                  "
+                >
+                  <div class="wrapper">
+                    <div class="product-for">
+                      <h2 style="margin-bottom: 0.8rem;">🏢 Acara Formal</h2>
+                      <p style="font-size: 1.4rem">
+                        Meeting, presentasi, acara kantor
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wrapper">
+                    <div class="product-for">
+                      <h2 style="margin-bottom: 0.8rem;">🎉 Acara Spesial</h2>
+                      <p style="font-size: 1.4rem">
+                        Pernikahan, kondangan, perayaan
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wrapper">
+                    <div class="product-for">
+                      <h2 style="margin-bottom: 0.8rem;">☕ Santai Elegan</h2>
+                      <p style="font-size: 1.4rem">
+                        Hangout, dinner, acara informal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="specifications" class="tab-content">
+              <table class="spec-table">
+                <tr>
+                  <th>Nama Produk</th>
+                  <td>Kemeja Batik Mega Mendung Premium</td>
+                </tr>
+                <tr>
+                  <th>Kategori</th>
+                  <td>Batik Pria / Kemeja Formal</td>
+                </tr>
+                <tr>
+                  <th>Bahan</th>
+                  <td>100% Katun Premium (Cotton Combed 30s)</td>
+                </tr>
+                <tr>
+                  <th>Teknik Batik</th>
+                  <td>Batik Tulis Tangan (Hand-drawn)</td>
+                </tr>
+                <tr>
+                  <th>Asal Motif</th>
+                  <td>Batik Cirebon - Mega Mendung</td>
+                </tr>
+                <tr>
+                  <th>Ukuran Tersedia</th>
+                  <td>S, M, L, XL, XXL</td>
+                </tr>
+                <tr>
+                  <th>Berat</th>
+                  <td>± 200 gram</td>
+                </tr>
+                <tr>
+                  <th>Model</th>
+                  <td>Slim Fit dengan Collar Modern</td>
+                </tr>
+                <tr>
+                  <th>Warna Dasar</th>
+                  <td>Biru Klasik, Hijau Tosca, Coklat Tua, Ungu Tua</td>
+                </tr>
+                <tr>
+                  <th>Cara Perawatan</th>
+                  <td>
+                    Cuci dengan tangan, hindari pemutih, jemur tidak langsung di
+                    bawah matahari
+                  </td>
+                </tr>
+                <tr>
+                  <th>Garansi</th>
+                  <td>30 hari kualitas produk</td>
+                </tr>
+                <tr>
+                  <th>Sertifikat</th>
+                  <td>SNI Tekstil Indonesia, Batik Mark</td>
+                </tr>
+              </table>
+
+              <div
+                style="
+                  background: var(--white);
+                  padding: 2rem;
+                  border-radius: 1rem;
+                  margin-top: 2rem;
+                "
+              >
+                <h4 style="margin-bottom: 1.5rem">📏 Panduan Ukuran</h4>
+                <table class="spec-table">
+                  <tr>
+                    <th>Ukuran</th>
+                    <th>Lingkar Dada (cm)</th>
+                    <th>Panjang Baju (cm)</th>
+                    <th>Lebar Bahu (cm)</th>
+                  </tr>
+                  <tr>
+                    <td><strong>S</strong></td>
+                    <td>96</td>
+                    <td>68</td>
+                    <td>42</td>
+                  </tr>
+                  <tr>
+                    <td><strong>M</strong></td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <td><strong>L</strong></td>
+                    <td>104</td>
+                    <td>72</td>
+                    <td>46</td>
+                  </tr>
+                  <tr>
+                    <td><strong>XL</strong></td>
+                    <td>108</td>
+                    <td>74</td>
+                    <td>48</td>
+                  </tr>
+                  <tr>
+                    <td><strong>XXL</strong></td>
+                    <td>112</td>
+                    <td>76</td>
+                    <td>50</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div id="reviews" class="tab-content">
+              <div class="reviews-header">
+                <div class="reviews-summary">
+                  <div class="review-score">4.7</div>
+                  <div class="review-info">
+                    <h3>Rating & Ulasan</h3>
+                    <div class="stars">
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-half-fill star"></i>
+                    </div>
+                    <p style="color: var(--light-brown)">
+                      Berdasarkan 324 ulasan
+                    </p>
+                  </div>
+                </div>
+                <button class="btn btn-secondary" style="flex: none">
+                  Tulis Ulasan
+                </button>
+              </div>
+
+              <div
+                style="
+                  background: var(--white);
+                  padding: 2rem;
+                  border-radius: 1rem;
+                  margin-bottom: 3rem;
+                "
+              >
+                <h4 style="margin-bottom: 1.5rem">Detail Rating</h4>
+                <div style="display: grid; gap: 1rem">
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <span style="width: 2rem">5★</span>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 0.8rem;
+                        background: var(--color-border);
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 78%;
+                          height: 100%;
+                          background: var(--yellow);
+                        "
+                      ></div>
+                    </div>
+                    <span style="font-size: 1.4rem; color: var(--light-brown)"
+                      >253</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <span style="width: 2rem">4★</span>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 0.8rem;
+                        background: var(--color-border);
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 15%;
+                          height: 100%;
+                          background: var(--yellow);
+                        "
+                      ></div>
+                    </div>
+                    <span style="font-size: 1.4rem; color: var(--light-brown)"
+                      >48</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <span style="width: 2rem">3★</span>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 0.8rem;
+                        background: var(--color-border);
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 5%;
+                          height: 100%;
+                          background: var(--yellow);
+                        "
+                      ></div>
+                    </div>
+                    <span style="font-size: 1.4rem; color: var(--light-brown)"
+                      >15</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <span style="width: 2rem">2★</span>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 0.8rem;
+                        background: var(--color-border);
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 2%;
+                          height: 100%;
+                          background: var(--yellow);
+                        "
+                      ></div>
+                    </div>
+                    <span style="font-size: 1.4rem; color: var(--light-brown)"
+                      >6</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 1rem">
+                    <span style="width: 2rem">1★</span>
+                    <div
+                      style="
+                        flex: 1;
+                        height: 0.8rem;
+                        background: var(--color-border);
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                      "
+                    >
+                      <div
+                        style="
+                          width: 1%;
+                          height: 100%;
+                          background: var(--yellow);
+                        "
+                      ></div>
+                    </div>
+                    <span style="font-size: 1.4rem; color: var(--light-brown)"
+                      >2</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews-list">
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="reviewer-info">
+                      <div class="reviewer-avatar">A</div>
+                      <div class="reviewer-details">
+                        <h4>Ahmad Rizki</h4>
+                        <p>Pembeli Terverifikasi • L</p>
+                      </div>
+                    </div>
+                    <span class="review-date">2 hari yang lalu</span>
+                  </div>
+                  <div class="review-rating">
+                    <div class="stars">
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Batiknya bagus banget! Kualitas premium dan motifnya sangat
+                    detail. Ukurannya pas dan bahannya adem. Pengiriman cepat
+                    dan packaging rapi. Puas banget dengan pembelian ini.
+                    Recommended!
+                  </p>
+                  <div class="review-images">
+                    <div class="review-image">
+                      <img
+                        src="assets/img/products/1-hover.png"
+                        alt="Review foto"
+                      />
+                    </div>
+                    <div class="review-image">
+                      <img
+                        src="assets/img/products/4-hover.png"
+                        alt="Review foto"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="reviewer-info">
+                      <div class="reviewer-avatar">S</div>
+                      <div class="reviewer-details">
+                        <h4>Sari Indah</h4>
+                        <p>Pembeli Terverifikasi • M</p>
+                      </div>
+                    </div>
+                    <span class="review-date">5 hari yang lalu</span>
+                  </div>
+                  <div class="review-rating">
+                    <div class="stars">
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Beli untuk suami, dia suka banget! Warnanya elegan dan cocok
+                    untuk acara formal. Batik tulisnya terlihat authentic dan
+                    berkualitas. Harga sesuai dengan kualitas yang didapat.
+                  </p>
+                  <div class="review-images">
+                    <div class="review-image">
+                      <img
+                        src="assets/img/products/2-hover.png"
+                        alt="Review foto"
+                      />
+                    </div>
+                    <div class="review-image">
+                      <img
+                        src="assets/img/products/7-hover.png"
+                        alt="Review foto"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="reviewer-info">
+                      <div class="reviewer-avatar">B</div>
+                      <div class="reviewer-details">
+                        <h4>Budi Prakoso</h4>
+                        <p>Pembeli Terverifikasi • XL</p>
+                      </div>
+                    </div>
+                    <span class="review-date">1 minggu yang lalu</span>
+                  </div>
+                  <div class="review-rating">
+                    <div class="stars">
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-fill star"></i>
+                      <i class="ri-star-line star empty"></i>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Produk bagus, tapi pengiriman agak lama. Overall satisfied
+                    dengan kualitas batiknya. Motif mega mendung sangat indah
+                    dan detail. Akan order lagi untuk warna lain.
+                  </p>
+                  <div class="review-images">
+                    <div class="review-image">
+                      <img
+                        src="assets/img/products/5-hover.png"
+                        alt="Review foto"
+                      />
+                    </div>
+                    <div class="review-image">
+                      <img src="assets/img/products/6.png" alt="Review foto" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-secondary"
+                style="width: 100%; margin-top: 2rem"
+              >
+                Lihat Semua Ulasan
+              </button>
+            </div>
+
+            <div id="care" class="tab-content">
+              <div
+                style="
+                  background: var(--white);
+                  padding: 3rem;
+                  border-radius: 1.2rem;
+                "
+              >
+                <h2 style="margin-bottom: 2rem; font-size: 2.2rem">
+                  🧺 Panduan Perawatan Batik
+                </h2>
+
+                <div style="display: grid; gap: 2.5rem">
+                  <div>
+                    <h3
+                      style="margin-bottom: 1rem; color: var(--primary-brown)"
+                    >
+                      ✋ Pencucian Pertama
+                    </h3>
+                    <ul
+                      style="
+                        list-style: disc;
+                        margin-left: 2rem;
+                        line-height: 1.8;
+                      "
+                    >
+                      <li>
+                        Cuci terpisah dari pakaian lain pada pencucian pertama
+                      </li>
+                      <li>
+                        Gunakan air dingin atau suam-suam kuku (maksimal 30°C)
+                      </li>
+                      <li>Rendam selama 15-20 menit sebelum dicuci</li>
+                      <li>
+                        Hindari penggunaan deterjen yang mengandung pemutih
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3
+                      style="margin-bottom: 1rem; color: var(--primary-brown)"
+                    >
+                      🫧 Cara Mencuci
+                    </h3>
+                    <ul
+                      style="
+                        list-style: disc;
+                        margin-left: 2rem;
+                        line-height: 1.8;
+                      "
+                    >
+                      <li>
+                        <strong>Cuci Tangan:</strong> Gosok perlahan dengan
+                        gerakan memutar
+                      </li>
+                      <li>
+                        <strong>Mesin Cuci:</strong> Gunakan mode
+                        gentle/delicate dengan putaran rendah
+                      </li>
+                      <li>
+                        Balik kemeja sebelum dicuci untuk melindungi motif
+                      </li>
+                      <li>
+                        Jangan diperas terlalu kuat, cukup ditekan perlahan
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3
+                      style="margin-bottom: 1rem; color: var(--primary-brown)"
+                    >
+                      ☀️ Pengeringan
+                    </h3>
+                    <ul
+                      style="
+                        list-style: disc;
+                        margin-left: 2rem;
+                        line-height: 1.8;
+                      "
+                    >
+                      <li>
+                        Jemur di tempat teduh, hindari sinar matahari langsung
+                      </li>
+                      <li>Gantung dengan hanger untuk menjaga bentuk</li>
+                      <li>Jangan gunakan mesin pengering (dryer)</li>
+                      <li>Pastikan kering sempurna sebelum disimpan</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3
+                      style="margin-bottom: 1rem; color: var(--primary-brown)"
+                    >
+                      👔 Penyimpanan
+                    </h3>
+                    <ul
+                      style="
+                        list-style: disc;
+                        margin-left: 2rem;
+                        line-height: 1.8;
+                      "
+                    >
+                      <li>Simpan di tempat kering dan berventilasi baik</li>
+                      <li>Gunakan hanger berkualitas atau lipat dengan rapi</li>
+                      <li>Beri kapur barus untuk mencegah ngengat</li>
+                      <li>
+                        Hindari penyimpanan dalam plastik untuk jangka lama
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3
+                      style="margin-bottom: 1rem; color: var(--primary-brown)"
+                    >
+                      🔥 Menyetrika
+                    </h3>
+                    <ul
+                      style="
+                        list-style: disc;
+                        margin-left: 2rem;
+                        line-height: 1.8;
+                      "
+                    >
+                      <li>Setrika dalam keadaan setengah kering</li>
+                      <li>Gunakan suhu sedang (medium heat)</li>
+                      <li>Letakkan kain tipis di atas batik saat menyetrika</li>
+                      <li>
+                        Setrika dari bagian dalam (terbalik) untuk melindungi
+                        motif
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    background: var(--cream);
+                    padding: 2rem;
+                    border-radius: 1rem;
+                    margin-top: 3rem;
+                  "
+                >
+                  <h3 style="margin-bottom: 1rem; color: var(--red)">
+                    ⚠️ Yang Harus Dihindari
+                  </h3>
+                  <ul
+                    style="
+                      list-style: disc;
+                      margin-left: 2rem;
+                      line-height: 1.8;
+                    "
+                  >
+                    <li>Jangan gunakan pemutih atau bahan kimia keras</li>
+                    <li>Hindari pemerasan yang terlalu kuat</li>
+                    <li>Jangan jemur di bawah sinar matahari langsung</li>
+                    <li>Hindari dry cleaning untuk batik tulis</li>
+                    <li>Jangan setrika langsung pada motif batik</li>
+                  </ul>
+                </div>
+
+                <div
+                  style="
+                    background: var(--primary-brown);
+                    color: var(--white);
+                    padding: 2rem;
+                    border-radius: 1rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                  "
+                >
+                  <h2 style="margin-bottom: 1rem; color: var(--white)">
+                    💡 Tips Pro
+                  </h2>
+                  <p>
+                    Dengan perawatan yang tepat, batik tulis berkualitas dapat
+                    bertahan puluhan tahun dan bahkan menurun nilainya dari
+                    generasi ke generasi!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="related-products">
+            <h2 class="section-title">Produk Serupa yang Mungkin Anda Suka</h2>
+            <div class="product-grid"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="assets/img/logo.png"
+              alt="Batik Rakyat"
+              class="footer-logo"
+            />
+            <p>
+              Menemani perjalanan fashion Anda dengan sentuhan warisan budaya
+              Indonesia sejak 1996.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="koleksi.html">Koleksi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#pria">Batik Pria</a></li>
+              <li><a href="#wanita">Batik Wanita</a></li>
+              <li><a href="#couple">Batik Couple</a></li>
+              <li><a href="#muslim">Batik Muslim</a></li>
+              <li><a href="#kain">Kain Batik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#cara-order">Cara Order</a></li>
+              <li><a href="#pengiriman">Pengiriman</a></li>
+              <li><a href="#pembayaran">Pembayaran</a></li>
+              <li><a href="#pengembalian">Pengembalian</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p>
+                <i class="ri-map-pin-2-line"></i>
+                Jl. Sudirman No. 123, Pekanbaru, Indonesia
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +62 123 4567 890
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                hello@batikrakyat.com
+              </p>
+              <p>
+                <i class="ri-time-line"></i>
+                Senin - Minggu: 08.00 - 20.00 WIB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Batik Rakyat. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#privacy">Privacy Policy</a>
+              <span class="separator">•</span>
+              <a href="#terms">Terms of Service</a>
+              <span class="separator">•</span>
+              <a href="#sitemap">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Thumbnail Gallery
+      document.querySelectorAll(".thumbnail").forEach((thumb) => {
+        thumb.addEventListener("click", function () {
+          const imageSrc = this.getAttribute("data-image");
+          const mainImage = document.getElementById("mainImage");
+
+          document
+            .querySelectorAll(".thumbnail")
+            .forEach((t) => t.classList.remove("active"));
+          this.classList.add("active");
+          mainImage.src = imageSrc;
+        });
+      });
+
+      // Size Selection
+      document.querySelectorAll(".size-option").forEach((size) => {
+        size.addEventListener("click", function () {
+          document
+            .querySelectorAll(".size-option")
+            .forEach((s) => s.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // Color Selection
+      document.querySelectorAll(".color-option").forEach((color) => {
+        color.addEventListener("click", function () {
+          document
+            .querySelectorAll(".color-option")
+            .forEach((c) => c.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // Quantity Control
+      function increaseQuantity() {
+        const quantityInput = document.getElementById("quantity");
+        const currentValue = parseInt(quantityInput.value);
+        const maxValue = parseInt(quantityInput.max);
+
+        if (currentValue < maxValue) {
+          quantityInput.value = currentValue + 1;
+        }
+      }
+
+      function decreaseQuantity() {
+        const quantityInput = document.getElementById("quantity");
+        const currentValue = parseInt(quantityInput.value);
+        const minValue = parseInt(quantityInput.min);
+
+        if (currentValue > minValue) {
+          quantityInput.value = currentValue - 1;
+        }
+      }
+
+      // Wishlist Toggle
+      function toggleWishlist(button) {
+        button.classList.toggle("active");
+        const icon = button.querySelector("i");
+        if (button.classList.contains("active")) {
+          icon.classList.replace("ri-heart-line", "ri-heart-fill");
+          showToast("Produk ditambahkan ke wishlist!");
+        } else {
+          icon.classList.replace("ri-heart-fill", "ri-heart-line");
+          showToast("Produk dihapus dari wishlist!");
+        }
+      }
+
+      // Flash Sale Countdown
+      function startCountdown() {
+        const countdownDate = new Date().getTime() + 5 * 60 * 60 * 1000; // 5 hours from now
+
+        const timer = setInterval(function () {
+          const now = new Date().getTime();
+          const distance = countdownDate - now;
+
+          const hours = Math.floor(distance / (1000 * 60 * 60));
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes
+          ).padStart(2, "0");
+          document.getElementById("seconds").textContent = String(
+            seconds
+          ).padStart(2, "0");
+
+          if (distance < 0) {
+            clearInterval(timer);
+            document.querySelector(".flash-sale").style.display = "none";
+            showToast("Flash sale telah berakhir!");
+          }
+        }, 1000);
+      }
+
+      // Tab Navigation
+      function openTab(event, tabId) {
+        const tabContents = document.getElementsByClassName("tab-content");
+        const tabButtons = document.getElementsByClassName("tab-btn");
+
+        Array.from(tabContents).forEach((tab) =>
+          tab.classList.remove("active")
+        );
+        Array.from(tabButtons).forEach((btn) => btn.classList.remove("active"));
+
+        document.getElementById(tabId).classList.add("active");
+        event.currentTarget.classList.add("active");
+      }
+
+      function updateCartCount() {
+        const cartCount = document.querySelector(".bag-count");
+        const currentCount = parseInt(
+          cartCount.textContent.replace(/[()]/g, "")
+        );
+        cartCount.textContent = `(${currentCount + 1})`;
+      }
+
+      // Initialize All Features
+      document.addEventListener("DOMContentLoaded", function () {
+        startCountdown();
+        initializeZoom();
+      });
+    </script>
+  </body>
+</html>
