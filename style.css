@@ -2464,9 +2464,6 @@ input[type="checkbox"] {
     text-align: left;
     margin: auto;
   }
-  .contact-info p {
-    justify-content: flex-start;
-  }
 
   .checkout-wrapper {
     grid-template-columns: 1fr 35rem;
@@ -5259,7 +5256,7 @@ input[type="radio"]:checked + .option-content {
   }
 
   .collection-item.large {
-    aspect-ratio: 16/9;
+    aspect-ratio: auto;
   }
 
   .feature-list {
@@ -5328,6 +5325,16 @@ input[type="radio"]:checked + .option-content {
 }
 
 @media (max-width: 576px) {
+  .contact-info p {
+    justify-content: center;
+  }
+  .contact-info p i {
+    display: none;
+  }
+  .login-content {
+    margin: 8rem 0;
+  }
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }
@@ -6011,7 +6018,13 @@ input[type="radio"]:checked + .option-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+}
+
+.price-info .discount-tag {
+  display: block;
+  width: 100%;
 }
 
 .current-price {
@@ -6055,7 +6068,6 @@ input[type="radio"]:checked + .option-content {
 
 @media (max-width: 992px) {
   .filter-wrapper {
-    flex-direction: column;
     gap: 1.5rem;
   }
 
@@ -6094,8 +6106,6 @@ input[type="radio"]:checked + .option-content {
   }
 
   .price-info {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 0.8rem;
   }
 }
