@@ -1940,6 +1940,14 @@ input[type="checkbox"] {
   flex-direction: column;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.justify-left {
+  justify-content: start !important;
+}
+
 .mt-0 {
   margin-top: 0;
 }
