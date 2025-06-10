@@ -6725,10 +6725,10 @@ input[type="number"] {
 }
 
 .category {
-  color: white;
+  color: var(--light-brown);
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 
 .date,
