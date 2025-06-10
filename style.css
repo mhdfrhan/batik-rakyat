@@ -6971,6 +6971,10 @@ input[type="number"] {
     font-size: 2.5rem;
   }
 
+  .bio-card img {
+    margin: auto;
+  }
+
   .bio-card {
     flex-direction: column;
     text-align: center;
