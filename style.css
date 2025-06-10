@@ -2807,7 +2807,6 @@ input[type="checkbox"] {
   padding: 0 0.5rem;
 }
 
-/* Exclusive Page Styles */
 .exclusive-hero {
   position: relative;
   height: 80vh;
@@ -5556,14 +5555,12 @@ input[type="radio"]:checked + .option-content {
   }
 }
 
-/* Add to style.css */
 .profile-page {
   padding: 12rem 0 6rem;
   background: var(--cream);
   min-height: 100vh;
 }
 
-/* Desktop Layout */
 .profile-desktop {
   display: grid;
   grid-template-columns: 30rem 1fr;
@@ -5747,7 +5744,6 @@ input[type="radio"]:checked + .option-content {
   color: var(--primary-brown);
 }
 
-/* Mobile Layout */
 .profile-mobile {
   display: none;
 }
@@ -6146,7 +6142,6 @@ input[type="radio"]:checked + .option-content {
   font-weight: 500;
 }
 
-/* Product Section */
 .product-detail-section .product-section {
   padding: 4rem 0;
 }
@@ -6225,7 +6220,6 @@ input[type="radio"]:checked + .option-content {
   object-fit: cover;
 }
 
-/* Product Info */
 .product-detail-section .product-detail-info {
   padding: 2rem 0;
 }
@@ -6271,7 +6265,6 @@ input[type="radio"]:checked + .option-content {
   color: var(--light-brown);
 }
 
-/* Price Section */
 .product-detail-section .price-section {
   background: var(--white);
   border-radius: 1.2rem;
@@ -6308,7 +6301,6 @@ input[type="radio"]:checked + .option-content {
   font-weight: 600;
 }
 
-/* Flash Sale Timer */
 .product-detail-section .flash-sale {
   background: linear-gradient(135deg, var(--red), #ef4444);
   color: var(--white);
@@ -6354,7 +6346,6 @@ input[type="radio"]:checked + .option-content {
   opacity: 0.8;
 }
 
-/* Product Options */
 .product-detail-section .product-options {
   margin-bottom: 3rem;
 }
@@ -6462,7 +6453,6 @@ input[type="radio"]:checked + .option-content {
   font-weight: 500;
 }
 
-/* Action Buttons */
 .product-detail-section .action-buttons {
   display: flex;
   gap: 1.5rem;
@@ -6501,7 +6491,6 @@ input[type="radio"]:checked + .option-content {
   border-color: var(--red);
 }
 
-/* Product Details */
 .product-detail-section .product-details {
   margin-top: 4rem;
 }
@@ -6663,14 +6652,12 @@ input[type="radio"]:checked + .option-content {
   }
 }
 
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -6706,7 +6693,6 @@ input[type="number"] {
   }
 }
 
-/* Article Detail Styles */
 .article-detail {
   padding-bottom: 6rem;
 }
@@ -6937,7 +6923,8 @@ input[type="number"] {
   border-radius: 0.6rem;
 }
 
-.related-articles .meta .date, .related-articles .meta .read-time {
+.related-articles .meta .date,
+.related-articles .meta .read-time {
   display: inline-block;
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -6973,8 +6960,6 @@ input[type="number"] {
   font-size: 1.8rem;
 }
 
-
-/* Responsive Design */
 @media (max-width: 992px) {
   .articles-grid {
     grid-template-columns: repeat(2, 1fr);
