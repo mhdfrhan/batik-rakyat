@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 Cara Merawat Batik Agar Tetap Awet - Batik Rakyat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>Selamat Datang di Batik Rakyat, Batiknya orang Indonesia</p>
+      </div>
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a class="active" href="index.html">Beranda</a>
+          <a href="koleksi.html">Koleksi</a>
+          <a href="ekslusif.html">Ekslusif</a>
+          <a href="artikel.html">Artikel</a>
+        </div>
+
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="nav-right">
+          <a href="#">Cari</a>
+          <a href="masuk.html">Masuk</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="keranjang.html"
+            >Keranjang <span class="bag-count">(3)</span></a
+          >
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-left">
+          <button class="hamburger-btn" id="hamburgerBtn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <a href="index.html" class="mobile-brand">
+          <img src="assets/img/logo.png" alt="Logo Batik Rakyat" class="logo" />
+          <img
+            src="assets/img/logo-white.png"
+            alt="Logo Batik Rakyat"
+            class="logo logo-white active"
+          />
+        </a>
+
+        <div class="mobile-nav-right">
+          <a href="keranjang.html" class="cart-icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+          <a href="wishlist.html" class="wishlist-icon">
+            <i class="ri-heart-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-modal" id="searchModal">
+      <div class="search-modal-content">
+        <div class="search-header">
+          <h2>Pencarian</h2>
+          <button class="search-close" id="searchClose">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <form class="search-form">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Cari produk batik..."
+            autofocus
+          />
+        </form>
+
+        <div class="search-suggestions">
+          <h3>Pencarian Populer</h3>
+          <div class="suggestion-tags">
+            <span class="suggestion-tag">Batik Mega Mendung</span>
+            <span class="suggestion-tag">Kemeja Pria</span>
+            <span class="suggestion-tag">Dress Batik</span>
+            <span class="suggestion-tag">Batik Couple</span>
+            <span class="suggestion-tag">Kain Batik Tulis</span>
+            <span class="suggestion-tag">Batik Muslim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Batik Rakyat"
+          class="sidebar-logo"
+        />
+        <button class="close-btn" id="closeBtn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-menu">
+        <a class="active" href="index.html">
+          <i class="ri-home-5-line"></i>
+          <span>Beranda</span>
+        </a>
+        <a href="koleksi.html">
+          <i class="ri-t-shirt-2-line"></i>
+          <span>Koleksi</span>
+        </a>
+        <a href="ekslusif.html">
+          <i class="ri-price-tag-3-line"></i>
+          <span>Ekslusif</span>
+        </a>
+        <a href="artikel.html">
+          <i class="ri-newspaper-line"></i>
+          <span>Artikel</span>
+        </a>
+      </div>
+
+      <div class="sidebar-auth">
+        <a href="masuk.html" class="auth-btn">Masuk ke Akun</a>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <a href="index.html" class="active">
+        <i class="ri-home-5-line"></i>
+        <span>Home</span>
+      </a>
+      <a href="koleksi.html">
+        <i class="ri-t-shirt-2-line"></i>
+        <span>Koleksi</span>
+      </a>
+      <a href="promo.html">
+        <i class="ri-price-tag-3-line"></i>
+        <span>Promo</span>
+      </a>
+      <a href="profil.html">
+        <i class="ri-user-3-line"></i>
+        <span>Profil</span>
+      </a>
+    </div>
+    
+    <main class="article-detail">
+      <section class="article-header">
+        <div class="container">
+          <nav class="breadcrumb">
+            <a href="index.html">Beranda</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <a href="artikel.html">Artikel</a>
+            <i class="ri-arrow-right-s-line"></i>
+            <span>7 Cara Merawat Batik</span>
+          </nav>
+
+          <div class="article-meta">
+            <div class="meta-left">
+              <span class="category">Perawatan</span>
+              <span class="date">18 Mei 2025</span>
+              <span class="read-time">5 min read</span>
+            </div>
+            <div class="share-buttons">
+              <button class="share-btn">
+                <i class="ri-facebook-line"></i>
+              </button>
+              <button class="share-btn">
+                <i class="ri-twitter-x-line"></i>
+              </button>
+              <button class="share-btn">
+                <i class="ri-whatsapp-line"></i>
+              </button>
+              <button class="share-btn">
+                <i class="ri-link-m"></i>
+              </button>
+            </div>
+          </div>
+
+          <h1 class="article-title">7 Cara Merawat Batik Agar Tetap Awet</h1>
+          <p class="article-subtitle">
+            Panduan lengkap merawat kain batik kesayangan agar tetap awet dan
+            terjaga kualitasnya dari generasi ke generasi
+          </p>
+
+          <div class="author-info">
+            <img
+              src="assets/farhan.jpg"
+              alt="Muhammad Farhan"
+              class="author-image"
+            />
+            <div class="author-details">
+              <h2>Muhammad Farhan</h2>
+              <p>Fashion & Culture Writer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <figure class="featured-image">
+        <img
+          src="https://images.unsplash.com/photo-1721361467569-f8edbf851f44?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Merawat Batik"
+        />
+        <figcaption>
+          Proses pencucian batik yang benar untuk menjaga kualitas kain
+        </figcaption>
+      </figure>
+
+      <section class="article-content">
+        <div class="container narrow">
+          <div class="detail-artikel-content">
+            <p class="mb-4">
+              Batik bukan sekadar pakaian biasa. Ia adalah warisan budaya yang
+              menyimpan nilai sejarah dan filosofi mendalam. Karenanya,
+              perawatan yang tepat sangat penting untuk menjaga kualitas dan
+              keawetan batik Anda.
+            </p>
+
+            <h2>1. Pilih Metode Pencucian yang Tepat</h2>
+            <p class="mb-2">
+              Hindari mencuci batik dengan mesin cuci, terutama untuk batik
+              tulis. Cuci dengan tangan menggunakan air dingin dan deterjen
+              lembut khusus untuk kain batik.
+            </p>
+
+            <h2>2. Gunakan Air Dingin</h2>
+            <p class="mb-2">
+              Air panas dapat merusak serat kain batik. Gunakan air dingin atau
+              suhu ruangan untuk mencuci dan membilas batik Anda.
+            </p>
+
+            <h2>3. Hindari Pemutih</h2>
+            <p class="mb-2">
+              Jangan pernah menggunakan pemutih atau bahan kimia keras lainnya
+              pada batik. Ini dapat merusak warna dan motif kain.
+            </p>
+
+            <h2>4. Jemur dengan Hati-hati</h2>
+            <p class="mb-2">
+              Jemur batik di tempat teduh, hindari sinar matahari langsung yang
+              dapat memudarkan warna. Gunakan gantungan kain atau jemuran yang
+              tidak merusak serat kain.
+            </p>
+
+            <h2>5. Setrika dengan Suhu Rendah</h2>
+            <p class="mb-2">
+              Setrika batik dengan suhu rendah dan gunakan kain tipis sebagai
+              pelindung agar motif tidak rusak. Hindari menyetrika langsung pada
+              motif yang timbul.
+            </p>
+
+            <h2>6. Hindari Dry Cleaning</h2>
+            <p class="mb-2">
+              Dry cleaning dapat merusak warna dan motif kain. Hindari dry
+              cleaning untuk batik tulis.
+            </p>
+
+            <h2>7. Hindari Pemerasan yang Terlalu Kuat</h2>
+            <p class="mb-2">
+              Pemerasan yang terlalu kuat dapat merusak warna dan motif kain.
+              Hindari pemerasan yang terlalu kuat untuk batik tulis.
+            </p>
+
+            <div class="info-box">
+              <i class="ri-information-line" style="font-size: 3rem"></i>
+              <div class="info-content">
+                <h3 class="mb-1">Tips Pro</h3>
+                <p>
+                  Rendam batik dalam air dingin yang dicampur cuka putih selama
+                  15 menit sebelum mencuci untuk membantu mengunci warna.
+                </p>
+              </div>
+            </div>
+
+            <div class="article-tags">
+              <span class="tag-label">Tags:</span>
+              <div class="tags">
+                <a href="#" class="tag">Perawatan Batik</a>
+                <a href="#" class="tag">Tips</a>
+                <a href="#" class="tag">Batik Care</a>
+                <a href="#" class="tag">Panduan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="author-bio">
+        <div class="container narrow">
+          <div class="bio-card">
+            <img src="assets/farhan.jpg" alt="Muhammad Farhan" />
+            <div class="bio-content">
+              <h3>Muhammad Farhan</h3>
+              <p class="bio-title">Fashion & Culture Writer</p>
+              <p class="bio-text">
+                Farhan adalah seorang penulis yang fokus pada topik fashion
+                tradisional dan budaya Indonesia. Dengan pengalaman lebih dari 5
+                tahun di industri fashion, ia aktif menulis tentang perkembangan
+                dan pelestarian batik.
+              </p>
+              <div class="social-links mt-2">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+                <a href="#"><i class="ri-linkedin-line"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="related-articles">
+        <div class="container">
+          <h2 class="section-title">Artikel Terkait</h2>
+          <div class="articles-grid">
+            <article class="article-card">
+              <div class="article-image">
+                <img src="assets/img/articles/3.png" alt="Artikel 1" />
+              </div>
+              <div class="article-content">
+                <span class="category-tag">Fashion</span>
+                <div class="meta">
+                  <span class="date">15 Mei 2025</span>
+                  <span class="read-time">4 min read</span>
+                </div>
+                <h3>Mix & Match Batik untuk Gaya Modern</h3>
+                <p>
+                  Panduan lengkap memadukan batik dengan items fashion modern
+                  untuk look yang stylish.
+                </p>
+                <a href="detail-artikel.html" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-image">
+                <img src="assets/img/articles/4.png" alt="Artikel 1" />
+              </div>
+              <div class="article-content">
+                <span class="category-tag">Fashion</span>
+                <div class="meta">
+                  <span class="date">15 Mei 2025</span>
+                  <span class="read-time">4 min read</span>
+                </div>
+                <h3>Mix & Match Batik untuk Gaya Modern</h3>
+                <p>
+                  Panduan lengkap memadukan batik dengan items fashion modern
+                  untuk look yang stylish.
+                </p>
+                <a href="detail-artikel.html" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-image">
+                <img src="assets/img/articles/5.png" alt="Artikel 1" />
+              </div>
+              <div class="article-content">
+                <span class="category-tag">Fashion</span>
+                <div class="meta">
+                  <span class="date">15 Mei 2025</span>
+                  <span class="read-time">4 min read</span>
+                </div>
+                <h3>Mix & Match Batik untuk Gaya Modern</h3>
+                <p>
+                  Panduan lengkap memadukan batik dengan items fashion modern
+                  untuk look yang stylish.
+                </p>
+                <a href="detail-artikel.html" class="read-more">
+                  Baca Selengkapnya <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-wrapper">
+            <div class="newsletter-content">
+              <span class="subtitle">Newsletter</span>
+              <h2>Dapatkan Update Terbaru</h2>
+              <p>
+                Berlangganan newsletter kami untuk mendapatkan informasi terbaru
+                tentang produk, promo, dan artikel menarik
+              </p>
+
+              <form class="newsletter-form">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    placeholder="Masukkan email Anda"
+                    required
+                  />
+                  <button type="submit" class="btn">
+                    Berlangganan <i class="ri-arrow-right-line"></i>
+                  </button>
+                </div>
+                <label class="privacy-label">
+                  <input type="checkbox" required />
+                  <span
+                    >Saya setuju menerima email marketing dari Batik
+                    Rakyat</span
+                  >
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mt-0">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="assets/img/logo.png"
+              alt="Batik Rakyat"
+              class="footer-logo"
+            />
+            <p>
+              Menemani perjalanan fashion Anda dengan sentuhan warisan budaya
+              Indonesia sejak 1996.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <i class="ri-youtube-line"></i>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="koleksi.html">Koleksi</a></li>
+              <li><a href="tentang-kami.html">Tentang Kami</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Kategori</h4>
+            <ul>
+              <li><a href="#pria">Batik Pria</a></li>
+              <li><a href="#wanita">Batik Wanita</a></li>
+              <li><a href="#couple">Batik Couple</a></li>
+              <li><a href="#muslim">Batik Muslim</a></li>
+              <li><a href="#kain">Kain Batik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="#cara-order">Cara Order</a></li>
+              <li><a href="#pengiriman">Pengiriman</a></li>
+              <li><a href="#pembayaran">Pembayaran</a></li>
+              <li><a href="#pengembalian">Pengembalian</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Hubungi Kami</h4>
+            <div class="contact-info">
+              <p>
+                <i class="ri-map-pin-2-line"></i>
+                Jl. Sudirman No. 123, Pekanbaru, Indonesia
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +62 123 4567 890
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                hello@batikrakyat.com
+              </p>
+              <p>
+                <i class="ri-time-line"></i>
+                Senin - Minggu: 08.00 - 20.00 WIB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 Batik Rakyat. All rights reserved.</p>
+            <div class="footer-bottom-links">
+              <a href="#privacy">Privacy Policy</a>
+              <span class="separator">•</span>
+              <a href="#terms">Terms of Service</a>
+              <span class="separator">•</span>
+              <a href="#sitemap">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

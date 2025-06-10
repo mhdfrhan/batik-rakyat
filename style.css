@@ -6705,3 +6705,309 @@ input[type="number"] {
     flex: 1 1 100%;
   }
 }
+
+/* Article Detail Styles */
+.article-detail {
+  padding-bottom: 6rem;
+}
+
+.article-header {
+  padding: 6rem 0 4rem;
+  margin-top: 8rem;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.meta-left {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #c0b4a6;
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+}
+
+.meta-left span {
+  color: var(--primary-brown);
+  margin: 0;
+  padding: 0;
+}
+
+.category {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.date,
+.read-time {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.share-btn:hover {
+  background: #c0b4a6;
+  border-color: var(--primary-brown);
+  color: var(--primary-brown);
+}
+
+.article-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.article-subtitle {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-details p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.featured-image {
+  width: 100%;
+  margin: 0;
+  background: #ded2c5;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.featured-image figcaption {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.3rem;
+}
+
+.article-content {
+  padding: 4rem 0;
+}
+
+.container.narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.info-box {
+  background: #ded2c5;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 4rem 0 0 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.info-box i {
+  font-size: 2rem;
+  color: var(--primary-brown);
+}
+
+.article-tags {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  padding: 0.5rem 1.8rem;
+  background: #ded2c5;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.tag:hover {
+  background: var(--primary-brown);
+  color: white;
+}
+
+.author-bio {
+  padding: 4rem 0;
+  background: var(--bg-light);
+}
+
+.bio-card {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bio-title {
+  margin-bottom: 1rem;
+  color: #8b7355;
+}
+
+.bio-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.related-articles {
+  padding: 6rem 0;
+}
+
+.related-articles .article-card {
+  position: relative;
+}
+
+.related-articles .article-image img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: top;
+}
+
+.related-articles .category-tag {
+  background-color: var(--primary-brown);
+  color: var(--white);
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  padding: 0.3rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.related-articles .meta .date, .related-articles .meta .read-time {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.related-articles .article-card p {
+  margin-top: 0.7rem;
+}
+
+.related-articles .read-more {
+  margin-top: 1rem !important;
+}
+
+.newsletter {
+  background: var(--primary-brown);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.newsletter h2 {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.newsletter p {
+  font-size: 1.8rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 2.5rem;
+  }
+
+  .bio-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .meta-left {
+    flex-wrap: wrap;
+  }
+}
